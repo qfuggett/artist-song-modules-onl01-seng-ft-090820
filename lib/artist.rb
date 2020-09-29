@@ -5,7 +5,7 @@ class Artist
   extend Memorable::ClassMethods      #defines the method as a class method, vs instance method (uses include keyword)
   extend Findable::ClassMethods
   include Paramable::InstanceMethods
-  include Memorable::InstanceMethods
+  include Memorable::InstanceMethods  #refers to nested module
   
   attr_accessor :name
   attr_reader :songs
