@@ -13,9 +13,8 @@ class Artist
   @@artists = []
 
   def initialize
-    super
-    self.class.all << self
-    # @@artists << self
+    #self.class.all << self   is the same as   @@artists << self   <<- see memorable module
+    super   #uses code in module but ALSO implements this
     @songs = []
   end
 
