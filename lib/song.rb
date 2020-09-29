@@ -11,7 +11,10 @@ class Song
   @@songs = []
 
   def initialize
-    @@songs << self
+    self.class.all << self      
+    #calls the #all instance method inside the #initialize instance method
+    #stores all instances inside the #all method below
+    # @@songs << self
   end
 
 
