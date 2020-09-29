@@ -3,6 +3,7 @@ require 'pry'
 
 class Artist
   extend Memorable::ClassMethods      #defines the method as a class method, vs instance method (uses include keyword)
+  extend Findable::ClassMethods
   attr_accessor :name
   attr_reader :songs
 
